@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.expected_conditions import (presence_of_element_located)
+from selenium.webdriver.support.ui #import (Select)
 
 class Base:
     navegador = webdriver.Chrome('chromedriver.exe')
@@ -22,3 +23,10 @@ class Base:
 
     def cerrar_navegador():
         Base.navegador.quit()
+
+    def switch_frame(frame):
+        Base.wait_d.until(presence_of_element_located((By.XPATH, frame)))
+        Base.navegador.switch_to_frame(frame)
+
+    ##generador random de caracteres en inputs
+    ##contador de caracteres en inputs
