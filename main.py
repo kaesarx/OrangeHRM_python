@@ -18,7 +18,6 @@ Base.Base.write_input("//textarea[@id='currentAddress']",'Jiron Junin 1001, Lima
 Base.Base.write_input("//textarea[@id='permanentAddress']"," CAgua-Aragua, Venezuela")
 Base.Base.click("//button[@id='submit']")
 
-
 '''
 '''checkbox'''
 Base.navigate(variables.direccion)

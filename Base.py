@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.expected_conditions import (presence_of_element_located)
 #from selenium.webdriver.support.ui import (Select)
 
-
 # class Base(unittest.TestCase):
 navegador = webdriver.Chrome('chromedriver.exe')
 wait_d = WebDriverWait(navegador, 10)
